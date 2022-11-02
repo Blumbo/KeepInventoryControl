@@ -64,8 +64,8 @@ public class KeepInvControlCmd {
                 "\n§7 Whitelisted items are kept upon death if keepInventory gamerule is set to §6false§7." +
                 "\n§7 Blacklisted items are dropped upon death if keepInventory gamerule is set to §etrue§7." +
                 "\n" +
-                "\n§b /" + command + " whitelist/blacklist add/remove <item> §7to add or remove items" +
-                "\n§b /" + command + " whitelist/blacklist addxp/removexp §7to add or remove experience" +
+                "\n§b /" + command + " <whitelist|blacklist> <add|remove> <item> §7to add or remove items" +
+                "\n§b /" + command + " <whitelist|blacklist> <addxp|removexp> §7to add or remove experience" +
                 "\n";
 
         source.sendMessage(Text.of(string));
