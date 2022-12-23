@@ -2,8 +2,8 @@ package net.blumbo.keepinvcontrol.misc;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
+import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
 import java.util.ArrayList;
 
@@ -28,7 +28,7 @@ public class KeepInvSaveData {
     private static String[] getStringArray(ArrayList<Item> itemList) {
         String[] array = new String[itemList.size()];
         for (int i = 0; i < array.length; i++) {
-            array[i] = Registry.ITEM.getId(itemList.get(i)).toString();
+            array[i] = Registries.ITEM.getId(itemList.get(i)).toString();
         }
         return array;
     }
@@ -48,7 +48,7 @@ public class KeepInvSaveData {
         ArrayList<Item> itemList = new ArrayList<>();
         for (String itemName : array) {
             Identifier identifier = new Identifier(itemName);
-            Item item = Registry.ITEM.get(identifier);
+            Item item = Registries.ITEM.get(identifier);
             if (item != Items.AIR) itemList.add(item);
         }
         return itemList;
