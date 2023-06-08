@@ -10,9 +10,6 @@
   "icon": "assets/keepinvcontrol/icon.png",
   "environment": "*",
   "entrypoints": {
-    "client": [
-      "net.blumbo.keepinvcontrol.client.KeepInvControlClient"
-    ],
     "main": [
       "net.blumbo.keepinvcontrol.KeepInvControl"
     ]
