@@ -6,7 +6,7 @@
   "description": "",
   "authors": [],
   "contact": {},
-  "license": "GPL-3.0",
+  "license": "MIT",
   "icon": "assets/keepinvcontrol/icon.png",
   "environment": "*",
   "entrypoints": {
