@@ -51,7 +51,7 @@ public abstract class PlayerEntityMixin extends LivingEntity {
     private void dropInventoryMixin(CallbackInfo ci) {
         super.dropInventory();
 
-        boolean blacklistMode = world.getGameRules().getBoolean(GameRules.KEEP_INVENTORY);
+        boolean blacklistMode = getWorld().getGameRules().getBoolean(GameRules.KEEP_INVENTORY);
 
         vanishAndDropInv(KeepInvListData.get(!blacklistMode).list, blacklistMode);
         ci.cancel();
